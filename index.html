@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="titles">
+            <h1 class="title">Gerador de Senhas</h1>
+            <p class="subtitle">Use nosso gerador de senha 100% seguro para criar suas contas profissionais e pessoais.</p>
+        </section>
+
+        <section class="box1">
+            <div class="box2">
+                <div class="box3">
+                    <input type="text" name="localSenha" id="localSenha" class="local-senha "> 
+                </div>
+
+                <div class="buttons">
+                    <button id="copy"><img src="copy.svg" onclick="copy()" width="42" alt=""></button>
+                    <button id="renew"><img src="renew.svg" width="42" alt=""></button>
+                </div>
+            </div>
+
+            <div class="seguranca">
+                <div id="cor-de-seguranca" class="bar completed"></div>
+            </div>
+        </section>
+
+        
+
+        <section class="box1-1">
+            <h3>Personalizar Senha</h3>
+            <span class="linha"></span>
+
+            <p>Total: <span id="tamanhoCaracteres">16</span></p>
+            <div class="box2-2">
+                <div class="box3-3">
+                    <input type="range" name="localRange" id="localRange" value="16" min="4" max="64">
+                </div>
+
+                <div class="opcoes">
+                    <label for="#">Maiusculas</label>
+                    <input type="checkbox" id="m-maiuscula" checked>
+
+                    <label for="#">Numbers</label>
+                    <input type="checkbox" id="n-numbers" checked>
+
+                    <label for="#">Simbolos</label>
+                    <input type="checkbox" id="s-symbols" checked>
+                </div>
+            </div>
+        </section>
+    
+        <div class="buttonEnviar">
+            <button id="btn">Copiar Senha</button>
+        </div>
+    </main>
+</body>
+<script src="aquivo.js"></script>
+</html>

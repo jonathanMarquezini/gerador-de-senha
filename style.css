@@ -1,0 +1,233 @@
+@import "reset.css";
+
+body {
+    background-color: #f8fafd;
+    font-family: 'Roboto', sans-serif;
+    color: #252525;
+    padding: 2rem;
+}
+main {
+    max-width: 780px;
+    margin: 0 auto;
+}
+/* inicio titulo */
+
+.titles {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.titles .title {
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+.titles .subtitle {
+    font-size: 1.1rem;
+    color: #828282;
+}
+
+/* fim do titulo */
+
+/* inicio da senha */
+
+main .box1 {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(132, 148, 165, 0.2);
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+main .box1 .box2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+main .box1 .box2 .box3 {
+    flex: 1;
+}
+main .box1 .box2 .box3 input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: default;
+    height: 52px;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* incio img */
+
+main .box1 .box2 .buttons button  {
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.2rem;
+    background-color: #fff;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+/* fim img */
+
+/* fim da senha */
+
+
+/* incio seguranca */
+
+main .seguranca {
+    height: 10px;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+main .seguranca .bar {
+    height: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.2s;
+}
+
+main .seguranca .bar.completed {
+    border-top-right-radius: 0;
+}
+main .seguranca .bar.safe {
+    background-color: rgb(11, 209, 11);
+}
+main .seguranca .bar.warning {
+    background-color: rgb(236, 236, 9);
+}
+main .seguranca .bar.critical {
+    background-color: rgb(221, 9, 9);
+}
+
+/* fim seguranca */
+
+
+/* inicio personalizar */
+
+main .box1-1 {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, auto);
+    grid-column: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(132, 148, 165, 0.2);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+main .box1-1 h3 {
+    margin: 3% 0px 2% 3%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+main .box1-1 .linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    width: 97%;
+    margin-bottom: 2.6%;
+}
+
+main .box1-1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 1% 0px 3% 3%;
+    font-weight: bold;
+}
+
+main .box1-1 .box2-2 .box3-3 input{
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+main .opcoes {
+    display: flex;
+    padding: 1rem;
+}
+main .opcoes label {
+    font-size: 1.2rem;
+    
+}
+main .opcoes input {
+    margin-right: 2rem;
+}
+
+/* fim personalizar */
+
+/* inico button */
+
+main .buttonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .buttonEnviar button {
+    width: 170px;
+    font-size: 1rem;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.384);
+    font-weight: bold;
+    transition: all 0.2s;
+    color: #fff;
+    background-color: #07a84d;
+    cursor: pointer;
+}
+main .buttonEnviar button:hover {
+    background-color: #16c252;
+}
+
+/* fim button */
+
+/* font size */
+
+main .box1 .box2 .box3 input.font-size-menor {
+    font-size: 0.950rem;
+}
+
+main .box1 .box2 .box3 input.font-size-medio {
+    font-size: 0.950rem;
+}
+
+main .box1 .box2 .box3 input.font-size-maior {
+    font-size: 0.950rem;
+}
+
+/* fim do font size */
+
+
+
+/* reponsividade  */
+
+
+@media screen and (max-width: 768px) {
+    .titles .title {
+        font-size: 1.5rem;
+    }
+    .titles .subtitle {
+        font-size: 0.8rem;
+    }
+
+    main .box1-1 h3 {
+        font-size: 1rem;
+    }
+
+    main .box1-1 p {
+        font-size: 0.85rem;
+    }
+
+    main .box1-1 .box2-2 .opcoes label {
+        font-size: 0.85rem;
+    }
+}
